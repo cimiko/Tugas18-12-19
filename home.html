@@ -11,6 +11,60 @@
     <link rel="stylesheet" href="home.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5ac1dba0a5.js" crossorigin="anonymous"></script>
+
+    <style>
+        .card-title {
+            text-shadow: 1px 2px 3px grey;
+            color: RoyalBlue;
+            font-size: 23px;
+        }
+
+        .card-title:hover {
+            text-shadow: 1px 2px 3px red;
+            color: tomato;
+            font-size: 24px;
+        }
+
+        .card-borderless img{
+            box-shadow: 0px 3px 4px 0px grey;
+        }
+
+        .nav1:hover {
+            text-shadow: 0px 4px 5px red;
+        }
+
+        .nav2:hover {
+            text-shadow: 0px 4px 5px red;
+        }
+
+        .nav3:hover {
+            text-shadow: 0px 4px 5px red;
+        }
+
+        .navbar-brand:hover {
+            text-shadow: 0px 4px 5px red;
+        }
+
+        .btn:hover {
+            box-shadow: 0px 1px 2px 1px red;
+        }
+
+        footer p {
+            color: grey;
+            opacity: 0.5;
+            font-size: 10px;
+        }
+
+        .fab {
+            text-shadow: 0px 3px 4px grey;
+            font-size: 20px;
+        }
+
+        .fab:hover {
+            text-shadow: 0px 2px 3px violet;
+            font-size: 22px;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,20 +72,21 @@
         <div class="jumbotron jumbotron-fluid" id="jumbo">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand"  style="color: honeydew;" href="#">Theory</a>
+                    <a class="navbar-brand" style="color: honeydew;" href="#">Theory</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" style="color: honeydew;" href="#">Home <span class="sr-only">(current)</span></a>
+                            <li class="nav-item active nav1">
+                                <a class="nav-link" style="color: honeydew;" href="home.html">Home <span
+                                        class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" style="color: honeydew;" href="#">Generic</a>
+                            <li class="nav-item active nav2">
+                                <a class="nav-link" style="color: honeydew;" href="Generic.html">Generic</a>
                             </li>
-                            <li class="nav-item active">
+                            <li class="nav-item active nav3">
                                 <a class="nav-link" style="color: honeydew;" href="#">Element</a>
                             </li>
                         </ul>
@@ -55,7 +110,8 @@
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-4" style="border-left: 1px solid grey; border-right: 1px solid grey;">
+                <div class="col-sm-12 col-md-4 col-lg-4"
+                    style="border-left: 1px solid grey; border-right: 1px solid grey;">
                     <div class="card-body">
                         <h5 class="card-title" style="color: royalblue;">Special title treatment</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ab
@@ -112,17 +168,17 @@
             <h2 style="color: royalblue;">Nunc Dignissm</h2>
             <p class="text-muted" id="tiga">Gatau itu bahasa apa</p>
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 card-borderless">
                     <img src="g11.jpg" class="img-fluid" style="height: 200px; width: 100%;" alt="">
-                    <h4 style="color: royalblue;">PEMANDANGAN</h4>
+                    <h4 class="card-title" style="color: royalblue;">PEMANDANGAN</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
                         perferendis fugit, minus labore, unde voluptatem ea modi ex dolore minima officia blanditiis!
                         Distinctio sint quam, necessitatibus ex fugiat ipsam eveniet?</p>
                     <button type="button" class="btn btn-info">MORE</button>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 card-borderless">
                     <img src="g12.jpg" class="img-fluid" style="height: 200px; width: 100%;" alt="">
-                    <h4 style="color: royalblue;">PEMANDANGAN</h4>
+                    <h4 class="card-title" style="color: royalblue;">PEMANDANGAN</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab maxime
                         perspiciatis quibusdam, earum doloribus cupiditate omnis nesciunt ipsa asperiores temporibus
                         quidem! Sit omnis repellendus temporibus ut deserunt at ex enim.</p>
@@ -132,12 +188,13 @@
         </div>
     </div>
 
-    <div id="footer">
+    <footer>
         <div class="container">
             <hr>
             <div class="row my-5">
                 <div class="col-6">
-                    <p>&copy; Untitled Design TEMPLATED Images Unsplash</p>
+                    <p data-aos="fade-up-right" data-aos-duration="1500" data-aos-offset="-50">&copy; Untitled Design
+                        TEMPLATED Images Unsplash</p>
                 </div>
 
                 <div class="col-6 text-right">
@@ -150,18 +207,18 @@
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
