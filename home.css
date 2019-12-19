@@ -6,7 +6,7 @@ body{
     background-image: url(g1.jpg);
     background-size: cover;
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     background-attachment: fixed;
 }
 
@@ -27,6 +27,11 @@ body{
     background-color: royalblue;
     padding-top: 30px;
     padding-bottom: 30px;
+    color: wheat;
+}
+
+#content1 p{
+    color: yellow;
 }
 
 #content1 img{
